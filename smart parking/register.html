@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <img src="img/back-ground.jpg" alt="" class="back-img">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="mb-0 text-center">Registration</h2>
+                        <div class="card-body">
+                            <form id="registrationForm">
+                                <div class="form-group">
+                                    <label for="firstName">First Name<span class="required"></span></label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName">
+                                    <div class="size">
+                                        <p id="firstNameError" class="error"></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastName">Last Name<span class="required"></span></label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName">
+                                    <div class="size">
+                                        <p id="lastNameError" class="error"></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email<span class="required"></span></label>
+                                    <input type="email" class="form-control" id="email" name="email">
+                                    <div class="size">
+                                        <p id="emailError" class="error"></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Password<span class="required"></span></label>
+                                    <input type="password" class="form-control" style="position: relative;" id="password" name="password">
+                                    <div class="size">
+                                        <p id="passwordError" class="error"></p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password<span class="required"></span></label>
+                                    <input type="password" class="form-control" style="position: relative;" id="confirmPassword" name="confirmPassword">
+                                    <div class="size">
+                                        <p id="confirmPasswordError" class="error"></p>
+                                    </div>
+                                </div>
+
+                                <label for="cars">Cars<span class="required"></span><img src="img/car.png"
+                                        alt=""></label>
+                                <div class="form-group cars-container">
+                                    <input type="number" class="form-control cars" id="cars"
+                                        name="cars" min="0">
+                                        
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary car-btn" type="button" id="addCarsButton">
+                                            <img src="img/checkmark.png" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="size">
+                                    <p id="carErrorMessage" class="error-message error"></p>
+                                </div>
+                                
+                                <div class="car-slot-container" id="carSlotContainer">
+                                    <!-- Car slots will be dynamically added here -->
+                                </div>
+                                
+
+                                <label for="bikes">Bikes<span class="required"></span><img src="img/sportbike.png"
+                                        alt=""></label>
+                                <div class="form-group bikes-container">
+                                    <input type="number" class="form-control bikes" id="bikes" name="bikes" min="0">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary bike-btn" type="button"
+                                            id="addBikesButton">
+                                            <img src="img/checkmark.png" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="size">
+                                <p id="bikeErrorMessage" class="error-message error"></p>
+                                </div>
+                                <div class="bike-slot-container" id="bikeSlotContainer">
+                                    <!-- Bike slots will be dynamically added here -->
+                                </div>
+
+
+
+                                <div class="btn-register">
+                                    <button type="reset" class="btn" id="cancelButton">Cancel</button>
+                                    <button type="submit" class="btn">Register</button>
+                                </div>
+
+                                <p class="text-center">Login your account?<a href="login.html">Login</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+
+</html>

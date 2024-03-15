@@ -1,0 +1,27 @@
+{
+  "carData": [
+    {
+      "id": "e07d",
+      "firstName": "Jayan",
+      "lastName": "Ribadiya",
+      "slot": "B01",
+      "vehicleNumber": "GJ09HJ7878"
+    }
+  ],
+  "bikeData": [
+    {
+      "id": "4f7b",
+      "firstName": "Jayan",
+      "lastName": "Ribadiya",
+      "slot": "B01",
+      "vehicleNumber": "GJ13MN4222"
+    },
+    {
+      "id": "fc2c",
+      "firstName": "Jayan",
+      "lastName": "Ribadiya",
+      "slot": "B02",
+      "vehicleNumber": "GJ04NN7765"
+    }
+  ]
+}

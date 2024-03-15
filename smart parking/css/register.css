@@ -1,0 +1,170 @@
+.card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.cars-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    height: 38px;
+}
+
+.bikes-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    height: 38px;
+}
+
+#message {
+    font-weight: bold;
+}
+
+.mt-5 {
+    margin-top: 2rem !important;
+}
+
+.btn-register {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+button {
+    margin: 10px;
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+button:hover {
+    background-color: rgb(123, 123, 123) !important;
+}
+
+.back-img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative !important;
+}
+
+h2 {
+    padding: 20px;
+}
+
+option {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.eye-c {
+    position: absolute;
+    width: 20px;
+    top: 62.7%;
+    right: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.size {
+    height: 13px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff0000;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+input , select {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.cars {
+    width: 75%;
+    position: relative;
+}
+
+.bikes {
+    width: 75%;
+    position: relative;
+}
+
+.img-fluid {
+    width: 30px;
+}
+
+.car-btn, .bike-btn {
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 50px;
+    height: 40px;
+}
+
+.input-group-append {
+    margin-left: 32px;
+}
+
+.car-slot {
+    margin-top: 10px;
+    display: flex;
+}
+
+.bike-slot {
+    margin-top: 10px;
+    display: flex;
+}
+
+.close-icon {
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

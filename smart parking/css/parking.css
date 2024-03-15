@@ -1,0 +1,580 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: rgba(241, 240, 240, 255);
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    color: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+/* Left side of the navbar */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-btn,
+.logout-btn {
+    background-color: rgba(255, 0, 0, 0.765);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Right side of the navbar */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-right: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+span {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #555;
+}
+
+.parking-logo {
+    width: 10%;
+}
+
+.profile {
+    background-color: rgba(255, 183, 0, 255);
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+/* button-container------------ */
+
+.button-container {
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.car-btn,
+.bike-btn,
+.replace-btn {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 15%;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.car-btn:hover {
+    background-color: rgba(255, 183, 0, 255);
+    border: 1px solid rgba(255, 183, 0, 255);
+}
+
+.bike-btn:hover {
+    background-color: rgba(255, 183, 0, 255);
+    border: 1px solid rgba(255, 183, 0, 255);
+}
+
+.replace-btn:hover {
+    background-color: rgba(255, 183, 0, 255);
+    border: 1px solid rgba(255, 183, 0, 255);
+}
+
+.car-img,
+.bike-img,
+.replace-img {
+    margin: 10px;
+}
+
+.vehicle-number-container {
+    width: 30%;
+    margin: 20px;
+}
+
+.vehicle-number {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+    height: 490px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #3498db;
+    border: 1px solid #000;
+}
+
+.car-box,
+.bike-box {
+    width: 100px;
+    height: 60px;
+    border: 1px solid gray;
+}
+
+.left-box {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 0px;
+    margin: 10px;
+}
+
+.border-left {
+    border-left: 0px;
+}
+
+.border-right {
+    border-right: 0px;
+}
+
+.border-top {
+    border-bottom: 1px solid gray;
+}
+
+.border-bottom {
+    border-bottom: 1px solid grey;
+}
+
+.car-slot,
+.bike-slot {
+    width: 80px;
+    height: 40px;
+    background-color: rgba(222, 222, 222, 255);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    cursor: pointer;
+}
+
+.bike-slot-img {
+    width: 50px;
+}
+
+.vehicle-number {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.vehicle-number h3 {
+    margin: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-slot {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h2,
+label {
+    white-space: nowrap;
+}
+
+.close-slot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.modal-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-details input {
+    width: 98%;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.modal-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cancelBtn,
+#submitBtn {
+    height: 40px;
+    width: 30%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#cancelBtn {
+    border: 1px solid orangered;
+    background-color: rgb(252, 199, 180);
+    color: orangered;
+}
+
+#submitBtn {
+    border: 1px solid green;
+    background-color: rgb(176, 255, 176);
+    color: green;
+}
+
+#cancelBtn:hover {
+    background-color: rgb(217, 58, 0);
+    color: white;
+}
+
+#submitBtn:hover {
+    background-color: rgb(0, 95, 0);
+    color: white;
+}
+
+#carNumberDropdown {
+    width: 99%;
+    height: 33px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 7px;
+}
+
+.button-container button.active {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+.car-btn.active {
+    background-color: white;
+    border: 1px solid orange;
+    color: orange;
+}
+
+#dataModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    padding-top: 0px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 40%;
+    max-width: 600px;
+    max-height: 80vh;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 96.6%;
+    background-color: #fefefe;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.table-container {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+#dataTable th,
+#dataTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#dataTable th {
+    background-color: #f2f2f2;
+}
+
+.delete-btn {
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 231, 231);
+}
+
+.delete-btn:hover {
+    background-color: rgb(255, 155, 155);
+}
+
+/* Style for the booked slot modal */
+#bookedSlotModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content-booked {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    font-size: 20px;
+    border-radius: 5px;
+    color: red;
+    text-align: center;
+}
+
+.close-booked {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-booked:hover,
+.close-booked:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for the confirmation delete modal */
+#confirmDeleteModal {
+    display: none;
+}
+
+.btn-yes,
+.btn-no,
+.btn-ok {
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.validation-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+/* @media qurey */
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .name {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content-slot {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .button-container button {
+        margin-bottom: 10px;
+        width: 140px;
+    }
+
+    .vehicle-number-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 890px) {
+    .modal-content {
+        width: 80%;
+        max-height: 80vh;
+    }
+
+    #dataTable {
+        overflow-x: auto;
+    }
+
+    #dataTable th,
+    #dataTable td {
+        white-space: nowrap;
+    }
+
+    #dataTable tbody {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*  fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.car-slot:hover{
+    border: 1px solid gray;
+}
+.bike-slot:hover{
+    border: 1px solid gray;
+}

@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": "efd2",
+      "firstName": "Jayan",
+      "lastName": "Ribadiya",
+      "email": "jayan@2508.com",
+      "password": "jayan",
+      "cars": {},
+      "bikes": {}
+    },
+    {
+      "id": "e011",
+      "firstName": "krushil",
+      "lastName": "ghadiya",
+      "email": "kg@gamil.com",
+      "password": "k",
+      "cars": {
+        "1": "GJ13MN4222",
+        "2": "GJ13MN4223",
+        "3": "GJ13MN4220",
+        "4": "GJ13MN4226",
+        "5": "GJ13MN4229"
+      },
+      "bikes": {
+        "1": "GJ13MN4222",
+        "2": "GJ13MN4221"
+      }
+    },
+    {
+      "id": "1e8c",
+      "firstName": "n",
+      "lastName": "n",
+      "email": "n@gamil.com",
+      "password": "n",
+      "cars": {
+        "1": "GJ13MN42"
+      },
+      "bikes": {
+        "1": "GJ13MN4290"
+      }
+    }
+  ]
+}
